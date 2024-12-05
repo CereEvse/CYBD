@@ -35,7 +35,7 @@ public class Employee {
     private Specialization specialization;
 
     @Column(name="experience")
-    private int experience;
+    private Long experience;
 
     @ManyToOne
     @JoinColumn(name = "id_addres")

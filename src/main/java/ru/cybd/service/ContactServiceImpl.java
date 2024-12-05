@@ -13,7 +13,8 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
-public class ContactServiceImpl {
+public class ContactServiceImpl implements ContactService{
+
     private final ContactRepository contactRepository;
     private final ExceptionHandler exceptionHandler;
 
@@ -23,7 +24,7 @@ public class ContactServiceImpl {
     }
 
     @Override
-    public List<Contact> getAllContact() {
+    public List<Contact> getAllContacts() {
         return contactRepository.findAll();
     }
 

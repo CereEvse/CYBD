@@ -20,7 +20,7 @@ public class PersonalData {
     @Column(name="id_personal_data")
     @GeneratedValue(generator = "id_personal_data_seq", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "id_personal_data_seq", sequenceName = "id_personal_data_seq", initialValue = 1, allocationSize = 1)
-    private Long idCustomer;
+    private Long idPersonalData;
 
     @JsonIgnore
     @OneToMany (mappedBy = "personalData")
